@@ -1,18 +1,18 @@
-/* Reset default margin and padding */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Set body background and font styles */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     color: #333;
 }
 
-/* Style for the header */
+
 header {
     background-color: #007bff;
     color: #fff;
@@ -20,7 +20,7 @@ header {
     text-align: center;
 }
 
-/* Style for container */
+
 .container {
     display: flex;
     flex-direction: column;
@@ -28,19 +28,19 @@ header {
     margin: 20px;
 }
 
-/* Style for profile picture */
+
 .profile-picture {
     margin-bottom: 20px;
-    max-width: 200px; /* Cambia este valor según tu preferencia */
+    max-width: 200px; 
 }
 
-/* Asegúrate de que la imagen dentro de .profile-picture también se ajuste */
+
 .profile-picture img {
     width: 100%;
     height: auto;
 }
 
-/* Style for profile info */
+
 .profile-info {
     background-color: #fff;
     padding: 20px;
@@ -50,12 +50,12 @@ header {
     max-width: 400px;
 }
 
-/* Style for links */
+
 .profile-info a {
     color: #007bff;
 }
 
-/* Style for footer */
+
 footer {
     background-color: #007bff;
     color: #fff;
@@ -63,7 +63,7 @@ footer {
     text-align: center;
 }
 
-/* Media query para dispositivos móviles */
+
 @media screen and (max-width: 600px) {
     header {
         padding: 10px;
