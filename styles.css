@@ -1,84 +1,119 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    margin: 0;
+    padding: 0;
 }
-
 
 header {
-    background-color: #007bff;
+    background-color: #14213d;
     color: #fff;
-    padding: 20px;
-    text-align: center;
+    padding: 10px 0;
 }
 
-
-.container {
+nav {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    margin: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #14213d ;
 }
 
-
-.profile-picture {
-    margin-bottom: 20px;
-    max-width: 200px; 
+b{
+    font-weight: 700;
 }
 
+a{
+    word-wrap: break-word;
+}
 
-.profile-picture img {
+.title-navbar{
+    text-align: center;
     width: 100%;
-    height: auto;
+    font-size: 40px;
+    padding: 25px;
+    color: white;
+    font-weight: 800;
 }
 
-
-.profile-info {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
+.content {
+    margin: 20px auto;
+    padding: 0 20px;
 }
-
-
-.profile-info a {
-    color: #007bff;
-}
-
 
 footer {
-    background-color: #007bff;
+    background-color: #e5e5e5;
     color: #fff;
-    padding: 20px;
     text-align: center;
+    padding-bottom:0px;
+}
+
+.img-footer{
+    width: 110px;
+    background: white;
+    padding: 4px 10px 10px 10px;
+    position: relative;
+    top: 4px;
+}
+
+.profile-card {
+    max-width: 1660px;
+    margin: 50px auto;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+}
+
+.profile-img {
+    width: 619px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.profile-info {
+    padding: 20px;
+    padding-top: 0px;
+    padding-left: 85px;
+}
+
+.profile-info h2 {
+    margin-bottom: 10px;
+    margin-top:28px;
+    font-weight: 100;
+}
+
+.profile-info p {
+    font-size: 14px;
+    color: #666;
 }
 
 
-@media screen and (max-width: 600px) {
-    header {
-        padding: 10px;
+/* Resolucion mobile */
+@media only screen and (max-width: 768px) {
+
+    .content {
+        margin: 20px 20px;
+        padding: 0 20px;
     }
 
-    .container {
-        margin: 10px;
+    .title-navbar{
+        text-align: center;
+        width: 100%;
+        font-size: 35px;
+        padding: 15px 5px 5px 5px;
+        font-weight: 800;
+    }
+    .profile-card {
+        flex-direction: column;
     }
 
-    .profile-picture {
-        max-width: 150px;
+    .profile-img {
+        width: 100%;
+        height: auto;
     }
 
     .profile-info {
-        padding: 10px;
-        max-width: 300px;
+        padding: 20px 10px;
     }
 }
